@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.header.title">Contact Us - Vision Clarity Institute</title>
+    <meta name="description" content="Contact Vision Clarity Institute to schedule your free consultation and learn more about our premium laser vision correction services.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <link rel="stylesheet" href="../css/contact-page.css"> <!-- Added specific CSS for contact page to match Image 2 design -->
+</head>
+<body>
+    <!-- Header with corrected design matching Image 2 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.svg" alt="Vision Clarity Institute" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <!-- Mobile menu toggle is styled according to Image 2 -->
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu" data-a11y-label="ariaLabels.mobileMenuButton">
+                    <img src="../assets/images/icons/menu.svg" alt="Menu">
+                </button>
+                <!-- Nav items styled as in Image 2 with proper horizontal layout -->
+                <ul class="nav-list">
+                    <li><a href="../index.html" data-i18n="global.menu.home">Home</a></li>
+                    <li><a href="services.html" data-i18n="global.menu.services">Services</a></li>
+                    <li><a href="technology.html" data-i18n="global.menu.technology">Technology</a></li>
+                    <li><a href="our-staff.html" data-i18n="global.menu.staff">Our Staff</a></li>
+                    <li><a href="locations.html" data-i18n="global.menu.locations">Locations</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="global.menu.contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Header actions with language selector and button matching Image 2 -->
+            <div class="header-actions">
+                <div class="language-selector">
+                    <select id="language-select" aria-label="Select Language" data-a11y-label="ariaLabels.languageSelector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="zh">中文</option>
+                        <option value="ko">한국어</option>
+                        <option value="hy">Հայերեն</option>
+                    </select>
+                </div>
+                <a href="contact.html" class="btn btn-primary" data-i18n="global.buttons.schedule">Schedule Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="contact.header.title">Contact Us</h1>
+            <p data-i18n="contact.header.subtitle">Schedule your free consultation or get in touch with our team</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section with layout matching Image 2's design aesthetic -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2 data-i18n="contact.form.title">Schedule Your Consultation</h2>
+                    <p data-i18n="contact.form.subtitle">Fill out the form below, and our patient coordinator will contact you within 24 hours.</p>
+                    
+                    <form class="contact-form" data-a11y-text="screenReaderOnly.contactFormStart">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.form.name">Full Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.form.email">Email Address</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-i18n="contact.form.phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred_language" class="form-field" data-field="preferred_language" data-i18n="contact.form.preferred_language">Preferred Language</label>
+                            <select id="preferred_language" name="preferred_language">
+                                <option value="en" data-i18n="contact.form.languages.english">English</option>
+                                <option value="es" data-i18n="contact.form.languages.spanish">Spanish</option>
+                                <option value="zh" data-i18n="contact.form.languages.chinese">Chinese</option>
+                                <option value="ko" data-i18n="contact.form.languages.korean">Korean</option>
+                                <option value="hy" data-i18n="contact.form.languages.armenian">Armenian</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="procedure" data-i18n="contact.form.procedure">Interested In</label>
+                            <select id="procedure" name="procedure">
+                                <option value="" data-i18n="contact.form.procedure_options.default">Select a procedure</option>
+                                <option value="traditional_lasik" data-i18n="contact.form.procedure_options.traditional">Traditional LASIK</option>
+                                <option value="custom_lasik" data-i18n="contact.form.procedure_options.custom">Custom Bladeless LASIK</option>
+                                <option value="prk" data-i18n="contact.form.procedure_options.prk">PRK</option>
+                                <option value="presbyopia" data-i18n="contact.form.procedure_options.presbyopia">Presbyopia Correction</option>
+                                <option value="consultation" data-i18n="contact.form.procedure_options.consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                            <label for="consent" data-i18n="contact.form.consent">I consent to Vision Clarity Institute contacting me regarding my inquiry.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Submit Request</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2 data-i18n="contact.info.title">Get in Touch</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="../assets/images/icons/phone.svg" alt="Phone">
+                        </div>
+                        <div class="info-content">
+                            <h3 data-i18n="contact.info.phone_title">Phone</h3>
+                            <p data-i18n="contact.info.phone_number">(800) 555-2020</p>
+                            <p class="info-note" data-i18n="contact.info.phone_hours">Available Monday-Friday, 8am-6pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="../assets/images/icons/email.svg" alt="Email">
+                        </div>
+                        <div class="info-content">
+                            <h3 data-i18n="contact.info.email_title">Email</h3>
+                            <p data-i18n="contact.info.email_address">info@visionclarityinstitute.com</p>
+                            <p class="info-note" data-i18n="contact.info.email_response">We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="../assets/images/icons/location.svg" alt="Location">
+                        </div>
+                        <div class="info-content">
+                            <h3 data-i18n="contact.info.location_title">Main Location</h3>
+                            <p data-i18n="contact.info.address">1234 Vision Way, Suite 100<br>Los Angeles, CA 90001</p>
+                            <p><a href="locations.html" class="text-link" data-i18n="contact.info.all_locations">See all locations</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section aligned with Image 2 visual design -->
+    <section class="map-section">
+        <div class="container">
+            <h2 data-i18n="contact.map.title">Find Us</h2>
+            <div class="map-container" data-a11y-label="ariaLabels.locationMap">
+                <!-- Map embed would go here -->
+                <img src="../assets/images/map.jpg" alt="Map of Vision Clarity Institute location" class="placeholder-map">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer styled to match Image 2 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="../assets/images/logo.svg" alt="Vision Clarity Institute" class="footer-logo">
+                    <p data-i18n="global.footer.tagline">Advanced Lasik eye surgery using cutting-edge technology for optimal results and patient satisfaction.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="global.footer.quickLinks">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html" data-i18n="global.menu.home">Home</a></li>
+                        <li><a href="services.html" data-i18n="global.menu.services">Services</a></li>
+                        <li><a href="technology.html" data-i18n="global.menu.technology">Technology</a></li>
+                        <li><a href="our-staff.html" data-i18n="global.menu.staff">Our Staff</a></li>
+                        <li><a href="locations.html" data-i18n="global.menu.locations">Locations</a></li>
+                        <li><a href="contact.html" data-i18n="global.menu.contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="global.footer.contact">Contact</h3>
+                    <address>
+                        <p>1234 Vision Way, Suite 100<br>Los Angeles, CA 90001</p>
+                        <p data-i18n="global.footer.phone">Phone: (800) 555-2020</p>
+                        <p data-i18n="global.footer.email">Email: info@visionclarityinstitute.com</p>
+                    </address>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="global.footer.hours">Hours</h3>
+                    <p data-i18n="global.footer.weekdays">Monday - Friday: 8am - 6pm</p>
+                    <p data-i18n="global.footer.saturday">Saturday: 9am - 2pm</p>
+                    <p data-i18n="global.footer.sunday">Sunday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="global.footer.copyright">&copy; 2025 Vision Clarity Institute. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="#" data-i18n="global.footer.privacy">Privacy Policy</a></li>
+                    <li><a href="#" data-i18n="global.footer.terms">Terms of Service</a></li>
+                    <li><a href="#" data-i18n="global.footer.accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/scripts.js"></script>
+    <script src="../js/chatbot.js"></script>
+    <script src="../js/i18n.js" type="module"></script>
+    <script src="../js/contact-page.js"></script> <!-- Added specific JS for contact page enhancements -->
+</body>
+</html>
